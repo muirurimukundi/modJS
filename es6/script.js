@@ -75,4 +75,15 @@ window.onload = function(){
     }
 
     mathy()
+
+    function logNinja(name="Jane", age = 24, belt = "red"){
+        console.log("My name is ", name, "my age is ", age, "my belt color is ", belt);
+
+    }
+
+    logNinja('John', 31, 'black');
+    logNinja() // if you don't have default parameters - it becomes undefined
+
+
 }
+
