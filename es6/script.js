@@ -54,7 +54,7 @@ window.onload = function(){
 
     // it will log out 4 because var is created in the global scope , creating a global variable 
     // remember you have to click to notice the console logs]
-    
+
     var newitems = document.getElementsByTagName('li');
     console.log('Newitems: ', newitems);
 
@@ -66,4 +66,13 @@ window.onload = function(){
     }
 
 
+
+    // default parameters done by using an assignment operator
+    console.log("Default Parameters")
+
+    function mathy(num=10){
+        console.log(num);
+    }
+
+    mathy()
 }
