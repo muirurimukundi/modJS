@@ -84,6 +84,21 @@ window.onload = function(){
     logNinja('John', 31, 'black');
     logNinja() // if you don't have default parameters - it becomes undefined
 
+    /*--------------------------------------------------------------------*/
 
+    // spread operator used when you want to spread an array into its individual components 
+
+    fruits = ['apples ','banananas ','oranges']   
+    console.log("Now we consider the spread operator: aka alama ya dukuduku in es6")
+    console.log("Jack went to the market and bought ", ...fruits) 
+
+    function bringTogether(num1,num2,num3){
+        console.log(num1,num2,num3)
+    }
+
+    // a function expecting 3 arguments, if they are inside an array the spread operator can be used
+
+    scores = [91,73, 100]
+    bringTogether(...scores)
 }
 
