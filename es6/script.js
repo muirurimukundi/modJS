@@ -100,5 +100,22 @@ window.onload = function(){
 
     scores = [91,73, 100]
     bringTogether(...scores)
+    
+    // tempate strings can allow you to format your strings , 
+    // syntax is `` back ticks and ${} to embed an expression
+
+    function greetMe(greeting, name, hometown, age){
+        // without template strings
+        console.log(greeting + " my name's " + name +" I come from "+ hometown+ " I am " + age + " years old");
+
+        // with template strings
+        // remember to include the $ if you ommit it it does not evalate the expression inside the curly braces
+        console.log(`${greeting}, my name's ${name}, I come from ${hometown}, and I am ${20+14} years old `)
+    }
+
+    greetMe("Howdy", "Pearson", "Texas", 43);
+
+
+    
 }
 
