@@ -116,6 +116,36 @@ window.onload = function(){
     greetMe("Howdy", "Pearson", "Texas", 43);
 
 
-    
+    // object literals
+
+    var name = "Crystal";
+    var belt = "Black";
+
+    // before exyntax
+    var ninja = {
+        name: name,
+        belt: belt,
+
+        chop: function(x){
+            console.log(`You chopped the enemy ${x} times`);
+        } // old syntax 
+    };
+
+    console.log(ninja.name, ninja.belt);
+
+    // in es6: we don't need to define the value inside the object
+
+    var ninja = {
+        name, belt,
+        chop(x){
+            console.log("new syntax for functions");
+            console.log(`You chopped the enemy ${x} times`);
+        }
+        
+    }
+
+    console.log("in es6")
+    console.log(ninja.belt);
+    console.log(ninja.chop(5));
 }
 
