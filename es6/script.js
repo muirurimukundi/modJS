@@ -147,5 +147,37 @@ window.onload = function(){
     console.log("in es6")
     console.log(ninja.belt);
     console.log(ninja.chop(5));
+
+    /**
+     * New string methods in es6: repeat, startsWith, endsWith, includes
+     */
+
+    // repeat is used for repeating a string 
+
+    let str = 'graaavy';
+
+    console.log(str.repeat(5));
+
+    let sentence = "goodbye";
+
+    console.log("1. " + sentence.startsWith('good'));
+    console.log("2. " + sentence.startsWith('bye'));
+    console.log("3. " + sentence.endsWith('bye'));
+    console.log("4. " + sentence.endsWith('bye', sentence.length - 3));
+
+
+    let youSay = "goodbye";
+
+    if (youSay.startsWith('goodbye')){
+        var iSay = "hello";
+    }
+
+    console.log(`you say ${youSay}, I say ${iSay}`);
+
+    // includes checks entire string to check if contains the characters you specify
+
+    var test = "My name is Ryu";
+
+    console.log(test.includes('name'));
 }
 
