@@ -179,5 +179,18 @@ window.onload = function(){
     var test = "My name is Ryu";
 
     console.log(test.includes('name'));
+
+    // arrow functions , previous syntax b4 arrow functions
+
+    var ninjaSalute = function(name){
+        console.log(`Niaje ${name}`);
+    }
+
+    ninjaSalute("Johnny");
+
+    // arrow function syntax
+    NinjaSalute = (name='Sam')=> console.log(`Vipi ${name}`);
+    NinjaSalute("Emma");
+    NinjaSalute(); // default argument works
 }
 
