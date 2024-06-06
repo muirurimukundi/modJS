@@ -214,5 +214,23 @@ window.onload = function(){
     };
 
     ninja.chop(5);
+
+    // Sets hold unique values 
+    var names = new Set();
+    names.add("Shaun").add("Bella").add("Tobby");
+
+    console.log(names);
+
+    // trying to duplicate an entry
+    names.add("Bella");
+
+    // arrays have duplicates but sets don't they eliminate duplicates 
+    // size of the set
+    console.log("Set size:" + names.size);
+
+    // Deleting elements in a set
+    names.delete("Bella");
+    console.log(names.size);
+
 }
 
