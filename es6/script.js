@@ -232,5 +232,13 @@ window.onload = function(){
     names.delete("Bella");
     console.log(names.size);
 
+    names.clear(); // remove everything in the set 
+    console.log(`contents of my set ${names} `)
+    console.log(names.size)
+
+    // check whether set has a certain element: returns a boolean
+    console.log(names.has("Shaun"));
+    names.add("biscuit").add("chocolate").add("candy").add("jawbreaker");
+    console.log(names.has("candy"));
 }
 
