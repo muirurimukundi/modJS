@@ -11,11 +11,13 @@ window.onload = function(){
 
         const pi = 10; // normally you can't redeclare a constant but here you can create a local version of pi and it will be legal showing that
         // the scope is only local
+        console.log(`The local pi is ${pi}`)
         console.log("The area is", pi * r * r);
     }
 
     
     calculateArea(5);
+    console.log(`The global pi is ${pi}`)
     console.log("Global pi is", pi); // uses the global pi thus its 3.142
 
 
