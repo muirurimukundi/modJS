@@ -194,5 +194,25 @@ window.onload = function(){
     NinjaSalute = (name='Sam')=> console.log(`Vipi ${name}`);
     NinjaSalute("Emma");
     NinjaSalute(); // default argument works
+
+    // we don't need the brackets around the function because it takes one argument alone, if they were more there would have been need
+    NinjaGreet = greeting => console.log(`${greeting} sir/maddam - welcome home!`);
+    NinjaGreet("Howdy");
+
+    var ninja = {
+        name: "Ryu",
+
+        chop(x){
+            window.setInterval(() => {
+                if(x>0){
+                    console.log(this.name+" chopped the enemy");
+                    x--;
+                }
+
+            }, 1000)
+        }
+    };
+
+    ninja.chop(5);
 }
 
